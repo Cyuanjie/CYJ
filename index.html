@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <input type="text" placeholder="搜索商家、美食"><button>搜索</button>
+      </nav>
+      <span id="myCart" onclick="myShopping()">我的购物车(<i id="numI">0</i>)</span>
+      <ul id="foods">
+        <table >
+            <tr id="tr1">
+                <td colspan="3"><img src="img/1cde.jpg"></td>
+                <td colspan="3"><img src="img/3a31d.jpg"></td>
+                <td colspan="3"><img src="img/9ecd.jpg"></td>
+                <td colspan="3"><img src="img/d64c553.jpg"></td>
+            </tr>
+            <tr class="tr_two">
+                <td colspan="2">A米汉堡</td>
+                <td>16元／份</td>
+                <td colspan="2">杨记小厨</td>
+                <td>17.5元／份</td>
+                <td colspan="2">杨铭宇黄焖鸡米饭</td>
+                <td>18元／份</td>
+                <td colspan="2">烤肉拌饭</td>
+                <td>18元／份</td>
+            </tr>
+            <tr class="tr_three">
+                <td colspan="3">月销8148单</td>
+                <td colspan="3">月销4639单</td>
+                <td colspan="3">月销2571单</td>
+                <td colspan="3">月销2347单</td>
+            </tr>
+            <tr class="tr_four">
+                <td>起送10元</td>
+                <td>免配送费</td>
+                <td>45分钟</td>
+                <td>起送10元</td>
+                <td>免配送费</td>
+                <td>38分钟</td>
+                <td>起送10元</td>
+                <td>免配送费</td>
+                <td>25分钟</td>
+                <td>起送0元</td>
+                <td>免配送费</td>
+                <td>29分钟</td>
+            </tr>
+            <tr class="tr_five">
+                <td colspan="3"><input type="submit" value="加入购物车" id="but" onclick="add('A米汉堡',16)"></td>
+                <td colspan="3"><input type="submit" value="加入购物车" id="but" onclick="add('杨记小厨',17.5)"></td>
+                <td colspan="3"><input type="submit" value="加入购物车" id="but" onclick="add('杨铭宇黄焖鸡米饭',18)"></td>
+                <td colspan="3"><input type="submit" value="加入购物车" id="but" onclick="add('烤肉拌饭',18)"></td>
+            </tr>
+        </table>
+      </ul>
+      <div id="cart">
+      <table>
+        <tr>
+          <th>全选<input type="checkbox" id="all" onclick="checkAll(this)"></th>
+          <th>菜品</th>
+          <th>价格（元/份）</th>
+          <th>操作</th>
+        </tr>
+      </table>
+      <ul>
+        <li><button onclick="alldve()">全部删除</button></li>
+        <li><span>合计￥<i id="moneyAdd">0</i></span>
+        <button onclick="money()">结算</button>
+    
+    </li>
+      </ul>
+      <button onclick="toFood()">继续点餐</button>
+      <div class="msg"></div>
+      </div>
+      <script src="js/js.js"></script>
+</body>
+</html>

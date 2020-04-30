@@ -1,0 +1,146 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+ul ,li {
+  list-style: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+nav {
+  height: 50px;
+  padding-top: 8px;
+  background: url('../img/ceiling-logo2.png') 100px no-repeat #ffd705;
+}
+
+nav input {
+  width: 280px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid #6b450a;
+  border-radius: 19px 0 0 19px;
+  margin-left: 450px;
+  padding-left: 40px;
+  background: url('../img/header.png') 15px 10px no-repeat;
+  outline: 0;
+}
+
+nav button {
+  display: inline-block;
+  height: 42px;
+  width: 100px;
+  line-height: 42px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6b450a;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  position: relative; 
+  top: 1px;
+  outline: 0;
+}
+
+#myCart {
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+#myCart i {
+  color: red;
+}
+
+#foods {
+  margin: auto;
+  width: 82%;
+}
+
+table{
+  padding: 10px;
+  border-spacing: 15px 10px;
+ 
+}
+#tr1{
+  background: white;
+}
+table td{
+  padding-left:10px;
+}
+table img{
+  width: 255px;
+  height: 190px;
+}
+.tr_two{
+  font-size: 16px;
+  font-weight: inherit;
+}
+.tr_two td:nth-child(2n){
+  text-align: right;
+}
+.tr_three{
+  font-size: 14px;
+  color: orange;
+  text-align: right;
+}
+.tr_four{
+  font-size: 14px;
+  color: grey;
+}
+.tr_four td:nth-child(3n){
+  text-align: right;
+}
+.tr_five{
+  text-align: right;
+}
+.tr_five input{
+  border: 1px solid #d3d1d1;
+  height: 25px;
+  background-color: #f2f2f2;
+}
+
+/*  购物车 */
+
+#cart {
+  width: 1200px;
+  margin: 10px auto;
+  display: none;
+  
+}
+table {
+  width: 1200px;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-bottom: 1px solid #999;
+}
+
+table tr:nth-of-type(1) {
+  background-color: skyblue;
+}
+
+table tr {
+  text-align: center;
+}
+
+#cart ul {
+  width: 1200px;
+}
+
+#cart ul li {
+  float: left;
+}
+
+#cart ul li:nth-last-of-type(1) {
+  float: right;
+}
+
+.cal {
+  overflow: hidden;
+}
